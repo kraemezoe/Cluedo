@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
-public class Main {
+public class Cluedo {
 
-	Scanner userInput = new Scanner(System.in);
-	public Main() {
+
+
+	public Cluedo() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public void walk(){
+
 
 	}
 
@@ -19,8 +21,13 @@ public class Main {
 
 
 	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Starting Cluedo");
+		System.out.println("How many players?");
+		int next = (Integer)sc.nextInt();
+
+		Game game1 = new Game(next);
 	}
 
 
